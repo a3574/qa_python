@@ -19,11 +19,6 @@ class BooksCollector:
     # получаем жанр книги по её имени
     def get_book_genre(self, name):
         return self.books_genre.get(name)
-
-    # Дописал метод, для того, чтобы отработала проверка test_add_new_book_add_two_books, я вот честно не понял этого. вы ожидаете или нужно было проверку удалить?
-    def get_books_rating(self):
-        return self.books_genre
-
     # выводим список книг с определённым жанром
     def get_books_with_specific_genre(self, genre):
         books_with_specific_genre = []
